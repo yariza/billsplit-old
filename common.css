@@ -1,0 +1,125 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', Helvetica, sans-serif;
+	background: #3E454C;
+	padding: 20px 0px;
+}
+
+article, table, input[type=button], input[type=submit] {
+	border-radius: 2px;
+}
+
+article {
+	padding: 20px 20px;
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+	border: 1px solid #FFFFFF;
+	background: #FCFCFC;
+}
+
+article h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+@media (max-width:800px) {
+	th {
+		font-size: .8em;
+	}
+}
+
+/* Spinners are annoying */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+	display: block;
+	padding: 5px;
+	width: 100%;
+}
+
+input[type=button], input[type=submit] {
+	width: 100%;
+	border: 1px solid #000000;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid;
+	margin-bottom: 5px;
+}
+
+input[type=text], input[type=number] {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: .9em;
+	border-style: none;
+	background: none;
+	height: 2em;
+}
+
+table, thead, tbody, tr, th, td {
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+table, thead, tbody, tr {
+	width: 100%;
+}
+
+#payers td:first-child {
+	border-left: 1px solid;
+}
+
+#payers td {
+	border-right: 1px solid;
+}
+
+#payers td:last-child {
+	padding: 0px 5px;
+	border-right: none;
+}
+
+#payers tr:last-child td {
+	border-bottom: 1px solid;
+}
+
+#payers tr:last-child td:last-child {
+	border-bottom: none;
+}
+
+#payers th {
+	border-bottom: 1px solid;
+}
+
+#payers tr > * {
+	width: 14.2857%;
+}
+
+#payers {
+	width: 100%;
+	border: none;
+}
+
+#payment td {
+	width: 50%;
+	line-height: 2em;
+}
+
+#payment tr {
+	display: flex;
+}
+
+#payment tr:first-child {
+	border-bottom: 1px solid;
+}
